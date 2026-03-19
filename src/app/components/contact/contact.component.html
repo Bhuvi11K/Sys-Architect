@@ -1,93 +1,100 @@
 <section id="contact" class="py-12 md:py-24 relative overflow-hidden">
-  <!-- Background elements -->
+  <!-- Background -->
   <div
     class="absolute right-0 top-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-cyber-cyan/5 rounded-full blur-[120px] pointer-events-none"
   ></div>
 
   <div class="container mx-auto px-6 max-w-7xl">
     <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 relative z-10">
-      <!-- Left Info Panel (Expanded) -->
+      <!-- LEFT SIDE -->
       <div class="w-full lg:w-5/12 flex flex-col justify-center">
-        <h2 class="text-3xl md:text-5xl font-mono text-white mb-6">
-          Ready to Build<br /><span class="text-gradient-cyan">Something That Works?</span>
+        <!-- Heading -->
+        <h2 class="text-3xl md:text-5xl font-mono text-white mb-6 leading-tight">
+          Let’s Build Something<br />
+          <span class="text-gradient-cyan">That Actually Works</span>
         </h2>
+
+        <!-- Subtext -->
         <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-          Let’s discuss your project goals, timeline, and how I can help you hit your targets.
-          Partner with a dedicated architect to turn complex problems into scalable solutions.
+          Have a project idea or facing performance issues? I help businesses build fast, scalable
+          applications and solve real technical challenges.
         </p>
 
-        <div class="space-y-6 mb-12">
+        <!-- Quick Contact Options -->
+        <div class="space-y-6 mb-10">
+          <!-- Location -->
           <div class="flex items-center gap-4 text-gray-300">
             <div
-              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-sm"
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10"
             >
               <mat-icon class="!text-cyber-cyan">location_on</mat-icon>
             </div>
             <div>
-              <div class="text-sm text-gray-500 font-mono uppercase tracking-wider mb-1">
-                Base Node
-              </div>
-              <div class="font-medium text-white">Tamil Nadu, IN (Global Remote)</div>
+              <div class="text-sm text-gray-500 font-mono uppercase mb-1">Location</div>
+              <div class="font-medium text-white">India (Available Worldwide)</div>
             </div>
           </div>
 
+          <!-- Email -->
           <div class="flex items-center gap-4 text-gray-300">
             <div
-              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10 shadow-sm"
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10"
             >
               <mat-icon class="!text-neon-purple">email</mat-icon>
             </div>
             <div>
-              <div class="text-sm text-gray-500 font-mono uppercase tracking-wider mb-1">
-                Direct Comms
-              </div>
-              <div class="font-medium text-white">hello&#64;sysarchitect.dev</div>
+              <div class="text-sm text-gray-500 font-mono uppercase mb-1">Email</div>
+              <div class="font-medium text-white">hello@sysarchitect.dev</div>
+            </div>
+          </div>
+
+          <!-- WhatsApp (NEW - HIGH CONVERSION) -->
+          <div class="flex items-center gap-4 text-gray-300">
+            <div
+              class="w-12 h-12 rounded-full bg-white/5 flex items-center justify-center border border-white/10"
+            >
+              <mat-icon class="!text-matrix-green">chat</mat-icon>
+            </div>
+            <div>
+              <div class="text-sm text-gray-500 font-mono uppercase mb-1">Quick Chat</div>
+              <a
+                href="https://wa.me/your-number"
+                target="_blank"
+                class="font-medium text-white underline"
+              >
+                Message on WhatsApp
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- Client FAQs (New Section) -->
+        <!-- Trust Section -->
         <div class="glass-panel p-6 border-glass-border">
           <h3 class="text-lg font-mono text-white mb-4 border-b border-glass-border pb-2">
-            Frequently Asked Parameters
+            What You Can Expect
           </h3>
 
-          <div class="mb-4">
-            <h4 class="font-medium text-cyber-cyan mb-1 flex items-center gap-2">
-              <mat-icon class="text-sm h-4 w-4">help_outline</mat-icon> What is your typical
-              timeline?
-            </h4>
-            <p class="text-sm text-gray-400 leading-relaxed pl-6">
-              Most MVP architectures are delivered in 6-8 weeks, with enterprise migrations taking
-              3-6 months based on scope.
-            </p>
-          </div>
-
-          <div>
-            <h4 class="font-medium text-cyber-cyan mb-1 flex items-center gap-2">
-              <mat-icon class="text-sm h-4 w-4">help_outline</mat-icon> Do you work with existing
-              teams?
-            </h4>
-            <p class="text-sm text-gray-400 leading-relaxed pl-6">
-              Absolutely. I frequently integrate into existing Agile teams as an external
-              Lead/Architect to accelerate delivery.
-            </p>
-          </div>
+          <ul class="space-y-3 text-sm text-gray-400">
+            <li>✔ Clear communication and regular updates</li>
+            <li>✔ Scalable and maintainable solutions</li>
+            <li>✔ On-time delivery</li>
+            <li>✔ Quick response (within 24 hours)</li>
+          </ul>
         </div>
       </div>
 
-      <!-- Right Form Container (Signal Form) -->
+      <!-- RIGHT SIDE FORM -->
       <div class="w-full lg:w-7/12 glass-panel p-8 md:p-12 border-glass-border self-start">
-        <h3 class="text-2xl font-mono text-white mb-2">Project Inquiry</h3>
+        <h3 class="text-2xl font-mono text-white mb-2">Start Your Project</h3>
+
         <p class="text-gray-400 mb-8">
-          Tell me about your business goals and technical requirements. Expect a response within 24
-          hours.
+          Tell me a bit about your project — I’ll get back to you within 24 hours.
         </p>
 
         <form class="flex flex-col gap-6" (ngSubmit)="onSubmit()">
-          <!-- Material Input overrides via Tailwind classes to fit the theme -->
+          <!-- Name -->
           <mat-form-field appearance="outline" class="w-full cyber-input">
-            <mat-label>Designation / Name</mat-label>
+            <mat-label>Your Name</mat-label>
             <input
               matInput
               [ngModel]="name()"
@@ -96,11 +103,11 @@
               required
               placeholder="John Doe"
             />
-            <mat-icon matPrefix class="mr-2 !text-gray-500">person_outline</mat-icon>
           </mat-form-field>
 
+          <!-- Email -->
           <mat-form-field appearance="outline" class="w-full cyber-input">
-            <mat-label>Comms Link (Email)</mat-label>
+            <mat-label>Email Address</mat-label>
             <input
               matInput
               type="email"
@@ -110,36 +117,42 @@
               required
               placeholder="john@company.com"
             />
-            <mat-icon matPrefix class="mr-2 !text-gray-500">mail_outline</mat-icon>
           </mat-form-field>
 
+          <!-- Message -->
           <mat-form-field appearance="outline" class="w-full cyber-input">
-            <mat-label>Project Parameters & ROI Goals</mat-label>
+            <mat-label>Project Details</mat-label>
             <textarea
               matInput
-              rows="6"
+              rows="5"
               [ngModel]="details()"
               (ngModelChange)="details.set($event)"
               name="details"
               required
-              placeholder="Describe your architecture requirements, timeline, and business objectives..."
+              placeholder="What are you trying to build or improve?"
             ></textarea>
           </mat-form-field>
 
+          <!-- CTA Button -->
           <button
             mat-flat-button
             type="submit"
             [disabled]="!isFormValid()"
-            class="!py-7 !text-lg !rounded-none mt-4 transition-all duration-300 shadow-lg"
+            class="!py-7 !text-lg !rounded-none mt-4 transition-all duration-300"
             [class.!bg-cyber-cyan]="isFormValid()"
             [class.!text-dark-bg]="isFormValid()"
             [class.hover:shadow-glow-cyan]="isFormValid()"
             [class.!bg-gray-800]="!isFormValid()"
             [class.!text-gray-500]="!isFormValid()"
           >
-            <mat-icon class="mr-2 pb-1">send</mat-icon>
-            Request Consultation
+            <mat-icon class="mr-2">send</mat-icon>
+            Get Free Consultation
           </button>
+
+          <!-- Micro trust -->
+          <p class="text-xs text-gray-500 text-center mt-2">
+            No spam. No commitment. Just a quick discussion.
+          </p>
         </form>
       </div>
     </div>

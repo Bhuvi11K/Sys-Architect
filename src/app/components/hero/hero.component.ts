@@ -8,7 +8,7 @@ import { MATERIAL_IMPORTS } from '../shared/material-imports';
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [...MATERIAL_IMPORTS],
+  imports: [...MATERIAL_IMPORTS, RouterLink],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
