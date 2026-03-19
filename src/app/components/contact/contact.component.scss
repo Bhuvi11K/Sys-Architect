@@ -1,0 +1,27 @@
+/* Overriding Material form field styles to match the cyberpunk aesthetic */
+::ng-deep .cyber-input .mat-mdc-text-field-wrapper {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  border-radius: 4px;
+}
+::ng-deep .cyber-input.mat-focused .mat-mdc-text-field-wrapper {
+  border-color: #00f3ff !important;
+  box-shadow: 0 0 10px rgba(0, 243, 255, 0.2);
+}
+::ng-deep .cyber-input .mat-mdc-form-field-focus-overlay {
+  background-color: transparent !important;
+}
+::ng-deep .cyber-input input,
+::ng-deep .cyber-input textarea,
+::ng-deep .cyber-input mat-label {
+  color: #e5e7eb !important;
+}
+::ng-deep .cyber-input .mdc-notched-outline__leading,
+::ng-deep .cyber-input .mdc-notched-outline__notch,
+::ng-deep .cyber-input .mdc-notched-outline__trailing {
+  border: none !important;
+}
+::ng-deep .cyber-input.mat-focused mat-label {
+  color: #00f3ff !important;
+}

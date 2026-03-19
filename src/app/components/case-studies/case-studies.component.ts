@@ -1,89 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MATERIAL_IMPORTS } from '../shared/material-imports';
 
 @Component({
   selector: 'app-case-studies',
   standalone: true,
-  imports: [CommonModule],
-  template: `
-    <section class="min-h-screen pt-32 pb-24 px-6 relative">
-      <div class="container mx-auto max-w-6xl">
-        <h2 class="text-4xl md:text-5xl font-mono font-bold text-white mb-4">Featured <span class="text-cyber-cyan">Case Studies</span></h2>
-        <p class="text-xl text-gray-400 mb-16 max-w-2xl font-light">Real business problems, solved with scalable engineering.</p>
-
-        <div class="space-y-12">
-          <!-- Case Study 1 -->
-          <div class="glass-panel p-8 md:p-12 border-glass-border">
-            <h3 class="text-3xl font-mono text-white mb-2">Enterprise Logistics Dashboard</h3>
-            <p class="text-cyber-cyan font-mono text-sm mb-6">Angular • Node.js • RxJS</p>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h4 class="text-lg text-white mb-2 font-medium">The Problem</h4>
-                <p class="text-gray-400">The client's existing dashboard took 8+ seconds to load critical shipment data, frustrating users and reducing overall fleet efficiency.</p>
-              </div>
-              <div>
-                <h4 class="text-lg text-white mb-2 font-medium">The Solution</h4>
-                <p class="text-gray-400">Architected a new dashboard from the ground up using Angular and a highly optimized Node.js API with RxJS for real-time state management.</p>
-              </div>
-            </div>
-            
-            <div class="bg-dark-bg/50 rounded-lg p-6 border border-glass-border">
-              <h4 class="text-white font-mono mb-4 text-center">Measurable Results</h4>
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div class="text-2xl font-bold text-cyber-cyan">85%</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Faster Load Times</div>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-neon-purple">45%</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Increased Active Usage</div>
-                </div>
-                <div class="col-span-2 md:col-span-1">
-                  <div class="text-2xl font-bold text-matrix-green">&lt;1.2s</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Total Data Latency</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Case Study 2 -->
-          <div class="glass-panel p-8 md:p-12 border-glass-border">
-            <h3 class="text-3xl font-mono text-white mb-2">Healthcare Scheduling Engine</h3>
-            <p class="text-neon-purple font-mono text-sm mb-6">Node.js • MSSQL • TypeScript</p>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-8">
-              <div>
-                <h4 class="text-lg text-white mb-2 font-medium">The Problem</h4>
-                <p class="text-gray-400">A legacy monolithic backend was causing double-booking errors and frequently crashing during peak hospital intake hours.</p>
-              </div>
-              <div>
-                <h4 class="text-lg text-white mb-2 font-medium">The Solution</h4>
-                <p class="text-gray-400">Engineered a robust, HIPAA-compliant scheduling API using Node.js and an optimized MSSQL database architecture to handle high concurrency.</p>
-              </div>
-            </div>
-            
-            <div class="bg-dark-bg/50 rounded-lg p-6 border border-glass-border">
-              <h4 class="text-white font-mono mb-4 text-center">Measurable Results</h4>
-              <div class="grid grid-cols-2 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div class="text-2xl font-bold text-cyber-cyan">0</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Double-Booking Errors</div>
-                </div>
-                <div>
-                  <div class="text-2xl font-bold text-neon-purple">99.9%</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">API Uptime</div>
-                </div>
-                <div class="col-span-2 md:col-span-1">
-                  <div class="text-2xl font-bold text-matrix-green">60%</div>
-                  <div class="text-xs text-gray-400 uppercase tracking-wider mt-1">Faster Processing</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  `
+  imports: [...MATERIAL_IMPORTS],
+  templateUrl: './case-studies.component.html',
+  styleUrl: './case-studies.component.scss',
 })
-export class CaseStudiesComponent {}
+export class CaseStudiesComponent { }
