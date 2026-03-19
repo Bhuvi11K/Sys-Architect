@@ -1,13 +1,15 @@
 import { Routes } from '@angular/router';
 import { HeroComponent } from './components/hero/hero.component';
-import { ExpertiseComponent } from './components/expertise/expertise.component';
-import { ProjectsComponent } from './components/projects/projects.component';
+import { AboutComponent } from './components/about/about.component';
+import { ServicesComponent } from './components/services/services.component';
+import { CaseStudiesComponent } from './components/case-studies/case-studies.component';
 import { ContactComponent } from './components/contact/contact.component';
 
 export const routes: Routes = [
-  { path: '', component: HeroComponent, title: 'SYS.ARCHITECT | Home' },
-  { path: 'expertise', component: ExpertiseComponent, title: 'SYS.ARCHITECT | Expertise' },
-  { path: 'projects', component: ProjectsComponent, title: 'SYS.ARCHITECT | Projects' },
-  { path: 'contact', component: ContactComponent, title: 'SYS.ARCHITECT | Contact' },
+  { path: '', component: HeroComponent, title: 'Bhuvanesh | Full-Stack Developer' },
+  { path: 'about', component: AboutComponent, title: 'Bhuvanesh | About' },
+  { path: 'services', component: ServicesComponent, title: 'Bhuvanesh | Services' },
+  { path: 'case-studies', component: CaseStudiesComponent, title: 'Bhuvanesh | Case Studies' },
+  { path: 'contact', component: ContactComponent, title: 'Bhuvanesh | Contact' },
   { path: '**', redirectTo: '' }
 ];

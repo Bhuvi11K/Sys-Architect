@@ -17,8 +17,9 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
       <!-- Desktop Nav -->
       <div class="hidden md:flex gap-8 items-center">
-        <a routerLink="/expertise" routerLinkActive="!text-cyber-cyan" class="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 hover:text-cyber-cyan dark:hover:text-cyber-cyan transition-colors">Skills</a>
-        <a routerLink="/projects" routerLinkActive="!text-neon-purple" class="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 hover:text-neon-purple dark:hover:text-neon-purple transition-colors">Work</a>
+        <a routerLink="/about" routerLinkActive="!text-cyber-cyan" class="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 hover:text-cyber-cyan dark:hover:text-cyber-cyan transition-colors">About</a>
+        <a routerLink="/services" routerLinkActive="!text-neon-purple" class="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 hover:text-neon-purple dark:hover:text-neon-purple transition-colors">Services</a>
+        <a routerLink="/case-studies" routerLinkActive="!text-cyber-cyan" class="text-sm uppercase tracking-widest text-gray-700 dark:text-gray-300 hover:text-cyber-cyan dark:hover:text-cyber-cyan transition-colors">Case Studies</a>
         <a routerLink="/contact" mat-stroked-button color="primary" class="!border-cyber-cyan !text-cyber-cyan hover:!bg-cyber-cyan/10">
           Contact
         </a>
@@ -44,9 +45,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 
       <!-- Mobile Menu Dropdown -->
       @if (isMenuOpen()) {
-        <div class="absolute top-full left-0 w-full glass-panel border-t border-glass-border rounded-none flex flex-col p-6 gap-4 md:hidden shadow-lg animate-in fade-in slide-in-from-top-4">
-          <a routerLink="/expertise" routerLinkActive="!text-cyber-cyan" class="py-2 text-lg text-gray-700 dark:text-gray-300 hover:text-cyber-cyan transition-colors" (click)="toggleMenu()">Skills</a>
-          <a routerLink="/projects" routerLinkActive="!text-neon-purple" class="py-2 text-lg text-gray-700 dark:text-gray-300 hover:text-neon-purple transition-colors" (click)="toggleMenu()">Work</a>
+        <div class="absolute top-full left-0 w-full glass-panel border-t border-glass-border rounded-none flex flex-col p-6 gap-4 md:hidden shadow-lg animate-in fade-in slide-in-from-top-4 z-50">
+          <a routerLink="/about" routerLinkActive="!text-cyber-cyan" class="py-2 text-lg text-gray-700 dark:text-gray-300 hover:text-cyber-cyan transition-colors" (click)="toggleMenu()">About</a>
+          <a routerLink="/services" routerLinkActive="!text-neon-purple" class="py-2 text-lg text-gray-700 dark:text-gray-300 hover:text-neon-purple transition-colors" (click)="toggleMenu()">Services</a>
+          <a routerLink="/case-studies" routerLinkActive="!text-cyber-cyan" class="py-2 text-lg text-gray-700 dark:text-gray-300 hover:text-cyber-cyan transition-colors" (click)="toggleMenu()">Case Studies</a>
           <a routerLink="/contact" mat-flat-button color="primary" class="!bg-cyber-cyan !text-dark-bg mt-4" (click)="toggleMenu()">
             Contact
           </a>

@@ -29,9 +29,9 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
           
           <!-- Left Info Panel (Expanded) -->
           <div class="w-full lg:w-5/12 flex flex-col justify-center">
-            <h2 class="text-3xl md:text-5xl font-mono text-white mb-6">Initialize<br /><span class="text-gradient-cyan">Connection</span>.</h2>
+            <h2 class="text-3xl md:text-5xl font-mono text-white mb-6">Ready to Build<br /><span class="text-gradient-cyan">Something That Works?</span></h2>
             <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-              Partner with a dedicated architect. I specialize in taking over complex, stranded codebases or building high-performance systems from the ground up.
+              Let’s discuss your project goals, timeline, and how I can help you hit your targets. Partner with a dedicated architect to turn complex problems into scalable solutions.
             </p>
             
             <div class="space-y-6 mb-12">
@@ -79,8 +79,8 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
           <!-- Right Form Container (Signal Form) -->
           <div class="w-full lg:w-7/12 glass-panel p-8 md:p-12 border-glass-border self-start">
-            <h3 class="text-2xl font-mono text-white mb-2">System Query Form</h3>
-            <p class="text-gray-400 mb-8">Transmit your project specifications securely below. Expect a response within 24 hours.</p>
+            <h3 class="text-2xl font-mono text-white mb-2">Project Inquiry</h3>
+            <p class="text-gray-400 mb-8">Tell me about your business goals and technical requirements. Expect a response within 24 hours.</p>
 
             <form class="flex flex-col gap-6" (ngSubmit)="onSubmit()">
               
@@ -113,7 +113,7 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
                 [class.!bg-gray-800]="!isFormValid()"
                 [class.!text-gray-500]="!isFormValid()">
                 <mat-icon class="mr-2 pb-1">send</mat-icon>
-                Transmit Payload
+                Request Consultation
               </button>
             </form>
           </div>

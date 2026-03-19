@@ -26,13 +26,13 @@ import { RouterLink } from '@angular/router';
 
         <!-- Headline -->
         <h1 class="text-5xl md:text-7xl font-bold font-mono text-white mb-6 tracking-tight leading-tight max-w-5xl">
-          Architecting <span class="text-gradient-cyan">Scalable</span><br />
-          Revenue-Driving Applications
+          Build <span class="text-gradient-cyan">High-Performance</span><br />
+          Web Applications That Drive Revenue
         </h1>
 
         <!-- Subheadline -->
         <p class="text-xl md:text-2xl text-gray-400 max-w-3xl mb-12 font-light leading-relaxed">
-          I don't just write code; I build robust business solutions. Specializing in high-performance <strong class="text-white font-medium">Angular 21</strong> micro-frontends and resilient <strong class="text-white font-medium">Node.js</strong> backend infrastructures for startups and enterprise teams.
+          I help startups and enterprise teams architect robust <strong class="text-white font-medium">Angular</strong> & <strong class="text-white font-medium">Node.js</strong> solutions. Stop fighting legacy code and technical debt—start scaling your business with reliable architecture.
         </p>
 
         <!-- Metric Ribbon -->
@@ -55,13 +55,13 @@ import { RouterLink } from '@angular/router';
 
         <!-- CTAs -->
         <div class="flex flex-col sm:flex-row gap-6 w-full sm:w-auto mt-4">
-          <a routerLink="/projects" mat-flat-button class="!bg-cyber-cyan !text-dark-bg !px-8 !py-6 !text-lg !rounded-none hover:shadow-glow-cyan transition-shadow">
+          <a routerLink="/contact" mat-flat-button class="!bg-cyber-cyan !text-dark-bg !px-8 !py-6 !text-lg !rounded-none hover:shadow-glow-cyan transition-shadow">
             <mat-icon class="mr-2">rocket_launch</mat-icon>
-            View Case Studies
+            Discuss Your Project
           </a>
           
-          <a routerLink="/contact" mat-stroked-button class="!border-gray-600 !text-white !px-8 !py-6 !text-lg !rounded-none hover:!border-white transition-colors">
-            Book a Discovery Call
+          <a routerLink="/case-studies" mat-stroked-button class="!border-gray-600 !text-white !px-8 !py-6 !text-lg !rounded-none hover:!border-white transition-colors">
+            View Case Studies
           </a>
         </div>
       </div>

@@ -1,0 +1,47 @@
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-services',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <section class="min-h-screen pt-32 pb-24 px-6 relative">
+      <div class="container mx-auto max-w-6xl">
+        <h2 class="text-4xl md:text-5xl font-mono font-bold text-white mb-4">What I Can Do <span class="text-neon-purple">For Your Business</span></h2>
+        <p class="text-xl text-gray-400 mb-16 max-w-2xl font-light">Custom software solutions designed to reduce overhead, eliminate technical debt, and scale effortlessly.</p>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <!-- Service 1 -->
+          <div class="glass-panel p-8 border-glass-border hover:border-cyber-cyan/50 hover:shadow-glow-cyan transition-all group">
+            <h3 class="text-2xl font-mono text-white mb-4 group-hover:text-cyber-cyan transition-colors">Custom Web App Development</h3>
+            <p class="text-gray-400 mb-4">Build fast, scalable, and secure enterprise-grade applications using Angular and Node.js.</p>
+            <p class="text-sm text-cyber-cyan font-mono mt-4">Best for: SaaS platforms and dashboards</p>
+          </div>
+          
+          <!-- Service 2 -->
+          <div class="glass-panel p-8 border-glass-border hover:border-neon-purple/50 hover:shadow-glow-purple transition-all group">
+            <h3 class="text-2xl font-mono text-white mb-4 group-hover:text-neon-purple transition-colors">API & Backend Architecture</h3>
+            <p class="text-gray-400 mb-4">Design resilient, secure, and lightning-fast APIs connected to optimized MSSQL databases.</p>
+            <p class="text-sm text-neon-purple font-mono mt-4">Best for: Mobile app backends or microservices</p>
+          </div>
+          
+          <!-- Service 3 -->
+          <div class="glass-panel p-8 border-glass-border hover:border-matrix-green/50 hover:shadow-glow-green transition-all group">
+            <h3 class="text-2xl font-mono text-white mb-4 group-hover:text-matrix-green transition-colors">Legacy Modernization</h3>
+            <p class="text-gray-400 mb-4">Safely migrate outdated systems to modern, maintainable tech stacks with zero business interruption.</p>
+            <p class="text-sm text-matrix-green font-mono mt-4">Best for: Scaling companies stuck with older tech</p>
+          </div>
+          
+          <!-- Service 4 -->
+          <div class="glass-panel p-8 border-glass-border shadow-lg hover:border-cyber-cyan/50 transition-all group">
+            <h3 class="text-2xl font-mono text-white mb-4 group-hover:text-cyber-cyan transition-colors">Performance Audits</h3>
+            <p class="text-gray-400 mb-4">Identify bottlenecks in your frontend or database and optimize them for peak Core Web Vitals.</p>
+            <p class="text-sm text-cyber-cyan font-mono mt-4">Best for: High-traffic apps with slow load times</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  `
+})
+export class ServicesComponent {}
